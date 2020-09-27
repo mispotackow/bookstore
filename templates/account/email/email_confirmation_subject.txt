@@ -1,0 +1,4 @@
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans %}Подтвердите свою регистрацию 🐷🐷🐷 {% endblocktrans %}
+{% endautoescape %}

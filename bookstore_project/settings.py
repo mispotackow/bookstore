@@ -71,7 +71,13 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Настройки рассылки по почте
+# EMAIL_HOST,
+# EMAIL_HOST_USER,
+# EMAIL_HOST_PASSWORD,
+# EMAIL_PORT
+# EMAIL_USE_TLS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -169,3 +175,5 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
+
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
