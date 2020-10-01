@@ -3,7 +3,8 @@ version: '3.8'
 services:
   web:
     build: .
-    command: python /PycharmProjects/books/manage.py runserver 0.0.0.0:8000
+    #command: python /PycharmProjects/books/manage.py runserver 0.0.0.0:8000
+    command: gunicorn bookstore_project.wsgi -b 0.0.0.0:8000
     volumes:
       - .:/PycharmProjects/books
     ports:
