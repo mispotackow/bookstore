@@ -12,15 +12,9 @@ services:
       - db
     environment:
       - "DJANGO_SECRET_KEY=z+nul&ybmcfue9=b%4#e4*(e@aej8#z-!y1)d$$golt5l#d1*c("
-      - "DJANGO_DEBUG=True"
+      - "DJANGO_DEBUG=False"
       - "STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51HWnBhBtoUj51ZevAurKvPGQSpBMnC6KbZ5naMavJ4Crq2j8aIMcXUXWtfRhYdA7xeMWsSPyGYcKNgQIMo7jR8qE00MYtBPLxa"
       - "STRIPE_TEST_SECRET_KEY=sk_test_51HWnBhBtoUj51Zev9givo2oBoPuP0Uc02rEG4z4viI1CVyZdxKsR5aqMIeAMBtNT7aZXC3kdbbjEbui7LpwzE1xT00gCshawlu"
-      - "DJANGO_SECURE_SSL_REDIRECT=False"
-      - "DJANGO_SECURE_HSTS_SECONDS=0"
-      - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False"
-      - "DJANGO_SECURE_HSTS_PRELOAD=False"
-      - "DJANGO_SESSION_COOKIE_SECURE=False"
-      - "DJANGO_CSRF_COOKIE_SECURE=False"
   db:
     image: postgres:11
     volumes:
